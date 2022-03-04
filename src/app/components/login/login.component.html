@@ -1,0 +1,28 @@
+<div class="row vh-100">
+  <div class="col-8 bg-secondary"></div>
+  <div class="col-4 bg-white">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="row">
+        <div class="mx-auto col-8">
+          <p class="fs-2 mb-5 fw-bold" style="margin-top: 150px">Login</p>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Username" formControlName="username" />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="text" class="form-control" id="password" placeholder="Password"
+              formControlName="password" />
+          </div>
+          <div class="mb-3">
+            <label for="hotelid" class="form-label">Hotel id</label>
+            <input type="number" class="form-control" id="hotelid" placeholder="Hotel id" formControlName="hotel_id" />
+          </div>
+          <div class="d-grid mb-3">
+            <button type="submit" class="btn btn-primary">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
