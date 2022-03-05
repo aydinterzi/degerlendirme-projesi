@@ -1,1 +1,51 @@
-<img [src]="details.profile_pic_url" alt="">
+<div class="container d-flex flex-column">
+  <div class="card mx-5 mt-4 d-flex flex-row justify-content-between border border-5 p-3">
+      <div class="d-flex flex-column ms-3">
+        <h3>Personal Information</h3>
+        <hr>
+        <p class="card-text"><span class="fw-bold">Id </span>:  {{details.id}}</p>
+        <p class="card-text"><span class="fw-bold">Email</span>  : {{ details.e_mail }}</p>
+        <p class="card-text"><span class="fw-bold">Phone no</span>  : {{ details.phone_no }}</p>
+        <p class="card-text"><span class="fw-bold">Wedding Anniversary</span>  : {{ details.wedding_anniversary }}</p>
+        <p class="card-text"><span class="fw-bold">Date of birth</span>  : {{ details.date_of_birth }}</p>
+    </div>
+      <div class="d-flex flex-column">
+        <h4>Loyalty Info</h4>
+        <hr>
+        <p class="card-text"><span class="fw-bold">Points earned</span>  : {{ details.loyalty_info.points_earned}}</p>
+        <p class="card-text"><span class="fw-bold">Point spend</span>  : {{ details.loyalty_info.points_spend }}</p>
+        <p class="card-text"><span class="fw-bold">Remaining Points</span>  : {{ details.loyalty_info.remaining_points}}</p>
+        <p class="card-text"><span class="fw-bold">Overnight stay</span>  : {{ details.loyalty_info.overnight_stay }}</p>
+        <p class="card-text"><span class="fw-bold">Target night stay</span>  : {{ details.loyalty_info.target_night_stay }}</p>
+        <p class="card-text"><span class="fw-bold">Earned night stay</span>  : {{ details.loyalty_info.earned_night_stay}}</p>
+        <p class="card-text"><span class="fw-bold">Room type</span>  : {{ details.loyalty_info.room_type }}</p>
+        <p class="card-text"><span class="fw-bold">Menu Item Id</span>  : {{ details.loyalty_info.menu_item_id }}</p>
+    </div>
+      <div class="d-flex flex-column">
+        <img [src]="details.profile_pic_url" alt="">
+        <h5 class="ms-3 mt-3">
+          {{ details.first_name }} {{ details.last_name }}
+        </h5>
+    </div>
+
+  </div>
+
+  <div class="card m-5 d-flex flex-row justify-content-around border border-5 p-3">
+    <div>
+      <h4>Hotel Informations</h4>
+      <hr>
+      <p class="card-text"><span class="fw-bold">Hotel id</span>  : {{ details.hotel_id }}</p>
+      <p class="card-text"><span class="fw-bold">Entry date </span>: {{ details.entry_date }}</p>
+      <p class="card-text"><span class="fw-bold">Release date</span> : {{ details.release_date }}</p>
+      <p class="card-text"><span class="fw-bold">Booking date</span> : {{ details.booking_date }}</p>
+
+    </div>
+    <div>
+      <h4>Room Informations</h4>
+      <hr>
+      <p class="card-text"><span class="fw-bold">Room no</span> : {{details.room_no}}</p>
+      <p class="card-text"><span class="fw-bold">Bed type</span> : {{details.bed_type}}</p>
+      <p class="card-text"><span class="fw-bold">Pillow type</span> : {{ details.pillow_type }}</p>
+    </div>
+  </div>
+</div>

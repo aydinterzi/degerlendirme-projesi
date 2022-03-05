@@ -1,3 +1,4 @@
+import { SurveyComponent } from './components/survey/survey.component';
 import { GuestDetailComponent } from './components/guest-detail/guest-detail.component';
 import { LoginComponent } from './components/login/login.component';
 import { NgModule } from '@angular/core';
@@ -8,6 +9,7 @@ const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path:'login', component:LoginComponent},
   {path:'detail', component:GuestDetailComponent,canActivate:[AuthGuard]},
+  {path:'survey', component:SurveyComponent,canActivate:[AuthGuard]},
 ];
 
 @NgModule({

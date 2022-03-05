@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { GuestDetailComponent } from './components/guest-detail/guest-detail.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SurveyComponent } from './components/survey/survey.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    GuestDetailComponent
+    GuestDetailComponent,
+    NavbarComponent,
+    SurveyComponent
   ],
   imports: [
     BrowserModule,
