@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem("token",response['token_val']);
       this.router.navigate(['detail']);
     },error=>{
-      console.log(error.error.message);
+      alert(error.error.message);
     });
   }
 }

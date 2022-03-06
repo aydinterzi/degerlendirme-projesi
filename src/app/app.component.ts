@@ -12,9 +12,11 @@ export class AppComponent {
   constructor(private authService:AuthService){
 
   }
+
   isAuthenticated(){
-  if(this.authService.isAuthenticated)
+  if(this.authService.isAuthenticated()){
     return true;
+  }
   return false;
   }
 }
